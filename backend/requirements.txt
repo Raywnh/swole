@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+opencv-python
+torch==2.2.1
+torchvision
+git+https://github.com/facebookresearch/fvcore.git
