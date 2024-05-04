@@ -1,7 +1,9 @@
 # body-segmentation-ai
 body segmentation ML project with some image manipulation
 
-Detectron2 Mask R-CNN model for segmentation and openCV for image processing
+- Detectron2 Mask R-CNN model for segmentation and openCV for image processing
+- FastAPI for backend
+- Next for frontend
 
 Backend Setup:
 ```
