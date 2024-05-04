@@ -3,7 +3,7 @@ body segmentation ML project with some image manipulation
 
 Detectron2 Mask R-CNN model for segmentation and openCV for image processing
 
-Backend:
+Backend Setup:
 ```
 1. cd backend
 2. python -m venv env
