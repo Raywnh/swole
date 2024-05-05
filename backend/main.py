@@ -6,7 +6,7 @@ from segment_enlarger import get_enlarged_segment
 
 app = FastAPI()
 
-@app.get("/enlarged")
+@app.post("/enlarged")
 async def enlarge_segment(file: UploadFile = File(...)):
     contents = await file.read()
     image = np.frombuffer(contents, np.uint8)
