@@ -48,16 +48,16 @@ export default function Home() {
       <div className="flex-col justify-center items-center h-max min-h-screen bg-slate-900 text-center font-mono p-1">
         <h1 className="text-yellow-400 text-7xl mb-2">gyattifier</h1>
         <h2 className="text-slate-400 text-lg">i like big butts and i cannot lie</h2>
-        <div className="mx-20 flex-row justify-center items-center bg-slate-200 p-6 rounded-lg shadow-md my-5">
+        <div className="mx-20 flex-row justify-center items-center bg-slate-200 p-6 rounded-3xl shadow-md my-5">
           <div className="flew-col justify-center items-center mb-5">
             <label htmlFor="file-upload" className="cursor-pointer bg-slate-800 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-slate-400 transition-colors ease-in-out">
               Upload Pic
             </label>
             <input id="file-upload" type="file" accept="image/" onChange={handleImageChange} className="hidden"/>
           </div>
-          <div className="relative flex justify-center items-center bg-slate-300 p-6 mx-16 rounded-lg shadow-md mb-5">
+          <div className="relative flex justify-center items-center bg-slate-300 p-6 mx-16 rounded-3xl shadow-md mb-5">
             {image && (
-              <img src={image} alt="Image" className={`max-w-full max-h-lvh object-contain rounded-lg shadow-lg items-center ${loading ? 'opacity-50' : 'opacity-100'} transition-opacity ease-in-out`}/>
+              <img src={image} alt="Image" className={`max-w-full max-h-lvh object-contain rounded-xl shadow-lg items-center ${loading ? 'opacity-50' : 'opacity-100'} transition-opacity ease-in-out`}/>
             )}
             {loading && (
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-10"> 
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
             )}
           </div>
-          <button onClick={uploadImage} className="rounded-lg bg-yellow-300 p-3 text-slate-700 shadow-md hover:bg-yellow-400 transition-colors ease-in-out">make ass bigger</button>
+          <button onClick={uploadImage} className="rounded-xl bg-yellow-300 p-3 text-slate-700 shadow-md hover:bg-yellow-400 transition-colors ease-in-out">make ass bigger</button>
         </div>
       </div>
   )
