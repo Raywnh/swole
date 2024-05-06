@@ -21,7 +21,7 @@ class WarpUtils:
         transformed_corners = [(x1, y1), (x2, y1), (x2 + h_stretch, y2 + v_stretch), (x1 - h_stretch, y2 + v_stretch)]
 
         transformed_roi = self.apply_perspective_warp(roi_corners, transformed_corners)
-        transformed_roi_img = Image.fromarray(transformed_roi).filter(ImageFilter.ModeFilter(size=10))
+        transformed_roi_img = Image.fromarray(transformed_roi).filter(ImageFilter.ModeFilter(size=8))
         transformed_roi = np.array(transformed_roi_img)
 
         return transformed_roi
@@ -39,8 +39,8 @@ class WarpUtils:
     def get_warp_factor(self):
         img_width, img_height = self.image_roi.shape[:2]
         x1, y1, x2, y2 = self.roi_box
-        h_factor = 400
-        v_factor = 200
+        h_factor = 500
+        v_factor = 300
 
         distance_to_left = x1
         distance_to_right = img_width - x2

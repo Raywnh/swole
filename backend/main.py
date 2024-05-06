@@ -3,8 +3,16 @@ from fastapi.responses import Response
 import cv2
 import numpy as np
 from segment_enlarger import get_enlarged_segment
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # List of allowed origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 @app.post("/enlarged")
 async def enlarge_segment(file: UploadFile = File(...)):
