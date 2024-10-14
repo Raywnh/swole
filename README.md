@@ -1,6 +1,8 @@
 # body-segmentation-ai
 body segmentation ML project with image manipulation
 
+enlarges a specific body part using machine learning
+
 - Jupyter Notebook for training, Detectron2 Mask R-CNN model for segmentation and openCV for image processing
 - FastAPI, Python for backend
 - Next, Tailwind, TS for frontend
